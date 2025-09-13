@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semangat untuk Ka Yuga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #0077b6;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Semangat untuk Ka Yuga 💙</h1>
+  <p id="pesan"></p>
+  <button onclick="pesanBaru()">Tampilkan Pesan Baru</button>
+
+  <script>
+    const pesanList = [
+      "Ka Yuga kesayanganku…
+Aku tahu belakangan ini kaka sibuk banget, sampai sering lupa jaga diri sendiri. Melihat kaka kelelahan bahkan sampai sakit itu bikin hati aku ikut sakit juga. Rasanya aku pengen selalu ada di samping kaka, ingetin makan, minum, dan istirahat, biar kaka nggak harus ngelewatin semua ini sendirian.
+
+Terima kasih ya, kaka… terima kasih udah hadir di hidup Salwa. Kehadiran kaka itu hadiah terindah yang Allah kasih buat aku. Dari kaka aku belajar apa artinya ketulusan, perhatian, dan kasih sayang yang nggak bisa diukur dengan apa pun. Bahkan di tengah sibuk dan capeknya kaka, aku masih bisa ngerasa kalau aku berarti buat kaka — dan itu yang bikin aku makin bersyukur punya kaka di hidupku.
+
+Kaka… jangan pernah merasa sendiri, karena selama aku ada, aku mau selalu jadi sandaran buat kaka. Aku mau jadi alasan kenapa kaka tetap kuat, bahkan ketika dunia terasa berat. Aku nggak butuh apa-apa yang besar, cukup lihat kaka sehat, bahagia, dan tetap semangat, itu udah cukup bikin aku bahagia.
+
+Aku sayang banget sama Kaka Yuga, lebih dari sekadar kata, lebih dari sekadar janji. Semoga aku bisa selalu jadi rumah buat kaka pulang, tempat kaka merasa damai, dan alasan kaka terus tersenyum.
+
+Salwa sayang kaka 🤍"
+    ];
+    function pesanBaru() {
+      const randomIndex = Math.floor(Math.random() * pesanList.length);
+      document.getElementById("pesan").textContent = pesanList[randomIndex];
+    }
+    // tampilkan pesan pertama kali
+    pesanBaru();
+  </script>
+</body>
+</html>
